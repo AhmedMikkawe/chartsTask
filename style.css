@@ -1,0 +1,63 @@
+fieldset {
+  width: 70%;
+  margin: 25px auto;
+}
+legend {
+  font-size: 24pt;
+  font-weight: bold;
+}
+#inputs {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  row-gap: 20px;
+  justify-items: center;
+  margin: 25px;
+}
+#inputs input[type="text"],
+#inputs input[type="number"] {
+  font-size: 14pt;
+  width: 300px;
+  padding: 5px;
+}
+#inputs input[type="color"] {
+  width: 100px;
+}
+#checks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 500px;
+  margin: 0 auto;
+  font-size: 14pt;
+  justify-items: center;
+}
+#checks input[type="checkbox"] {
+  transform: scale(1.5);
+}
+#draw {
+  display: block;
+  width: 200px;
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 10px;
+  margin: 25px auto 10px auto;
+}
+
+#result > canvas {
+  margin: 25px;
+  width: 30%;
+}
+#result > canvas:nth-of-type(2) {
+  align-self: flex-end;
+}
+#catStatus > div {
+  margin: 20px;
+}
+#errors {
+  background-color: #ee88a2;
+  border: 1px solid salmon;
+  border-radius: 12px;
+  color: #e62454;
+}
+.d-none {
+  display: none;
+}
